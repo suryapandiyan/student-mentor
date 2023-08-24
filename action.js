@@ -44,6 +44,7 @@ exports.createMentors = async (req, res) => {
     email: req.body.email,
   };
 
+
   try {
     const check_mentor_mail = await MentorSchema.findOne({
       email: new_mentor.email,
@@ -63,6 +64,7 @@ exports.createStudents = async (req, res) => {
     name: req.body.name,
     email: req.body.email,
   };
+
 
   try {
     const check_student_mail = await StudentSchema.findOne({
